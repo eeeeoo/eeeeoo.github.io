@@ -1,0 +1,114 @@
+
+
+#emotibubbles-logo {
+  width: 30px;
+  margin: 0 15px 0;
+  box-shadow: 0 0 0;
+}
+
+ul#emotibubbles-materials {
+  list-style-type: disc;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  list-style-position: inside;
+}
+
+p.caption {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.left-border {
+  border-left: 4px solid black;
+  padding: 10px 0;
+  margin: 40px 0;
+}
+
+.left-border-text {
+  margin-left: 30px;
+}
+
+.parallax {
+  height: 550px;
+/*  background-color: #F7F7F7;*/
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.feature-group {
+  margin: 50px 0;
+}
+
+.feature-1-col {
+  margin-bottom: 50px;
+}
+
+.feature-2-col {
+  margin: 3% 0;
+}
+
+@media (max-width: 992px) {
+  .feature-1-col, .feature-2-col {
+    text-align: center;
+  }
+}
+
+.purple-fa {
+  color: #9485EA; /*purple*/
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; overflow:
+  hidden; max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.large-space {
+  margin: 80px 0;
+}
+
+.big-title{
+    font-family: 'Roboto Black', arial;
+}
+.subtitle{
+    color: rgba(0, 0, 0, 0.4);
+/*    font-size:25px;*/
+        font-family: 'Roboto Black', arial;
+
+}
+
+.about{
+    font-size:23px;
+font-family: 'PT Serif', serif;
+
+}
+
+.body-text{
+    font-size:20px;
+    color: rgba(0, 0, 0, 0.5);
+font-family: 'PT Serif', serif;
+
+}
+
+/*ionicon class*/
+.sign{
+    font-size:30px;
+    color:#FF4500;
+}
+
+.social{
+    font-size:30px;
+    color:#FF4500;
+    padding:20px;
+}

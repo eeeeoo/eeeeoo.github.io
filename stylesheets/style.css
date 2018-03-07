@@ -1,5 +1,5 @@
 body {
-font-family: 'Roboto Black', arial;
+  font-family: 'Roboto', sans-serif;
   background-image: url("assets/background.jpg");
   letter-spacing: 0.3px;
   color: rgba(0,0,0,0.8);
@@ -12,7 +12,7 @@ a, a:visited, a:link {
 }
 
 h2, h3, h4, h5 {
-   font-family: 'Roboto Black', arial;
+   font-family: 'Roboto', sans-serif;
 }
 
 h2, h3, h4, h5 {
@@ -32,7 +32,7 @@ ul li, ol li {
 .lead {
   font-size: 1rem;
   line-height: 1.9rem;
-    font-family: 'PT Serif', serif;
+  font-family: 'PT Serif', serif;
 
 }
 
@@ -47,7 +47,7 @@ ul li, ol li {
   font-size: 0.8rem;
   line-height: 0;
   letter-spacing: 1px;
-  font-family: 'Roboto Black', arial;
+  font-family: 'Roboto', sans-serif;
 
 }
 

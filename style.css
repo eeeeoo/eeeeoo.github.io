@@ -1,12 +1,12 @@
 body {
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Black', arial;
   background-image: url("assets/background.jpg");
   letter-spacing: 0.3px;
   color: rgba(0,0,0,0.8);
 }
 
 a, a:visited, a:link {
-  color: #FF4500;
+  color: #E6234F;
 /*  border-bottom: 1px dashed #FF7A67;*/
   text-decoration: none;
 }
@@ -56,13 +56,6 @@ ul li, ol li {
   font-size: 0.9rem;
 }
 
-#mainNav {
-  position: fixed;
-}
-
-#navbarResponsive {
-  text-align: right;
-}
 /* ==== end of nav styling ==== */
 
 .icon {
@@ -180,8 +173,8 @@ a.nav-link, a.navbar-brand, a.carousel-control-prev, a.carousel-control-next {
   box-shadow: 0 4px 25px #E0E0E0;
   transition: box-shadow 0.4s;
 }
-/*
 
+/*
 .container {
     overflow: hidden;
     background-color: white;
@@ -208,4 +201,30 @@ a.nav-link, a.navbar-brand, a.carousel-control-prev, a.carousel-control-next {
 .navbar-brand>img{
     width:10%;
     height:10%;
+}
+
+.jumbotron{
+    background-color: white;
+}
+
+.jumbotron .row > a {
+    display: block;
+}
+
+.jumbotron > .row div a img {
+    max-height: 80px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*ionicon class*/
+.sign{
+    font-size:30px;
+    color:#E6234F;
+}
+
+.social{
+    font-size:30px;
+    color:#E6234F;
+    padding:20px;
 }

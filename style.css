@@ -198,10 +198,12 @@ a.nav-link, a.navbar-brand, a.carousel-control-prev, a.carousel-control-next {
     width:auto;
 }*/
 
+/*
 .navbar-brand>img{
     width:10%;
     height:10%;
 }
+*/
 
 .jumbotron{
     background-color: white;

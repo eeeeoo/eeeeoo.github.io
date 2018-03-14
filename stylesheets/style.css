@@ -198,3 +198,10 @@ a.nav-link, a.navbar-brand, a.carousel-control-prev, a.carousel-control-next {
 .xshadow{
     box-shadow:none;
 }
+
+.cta, .cta:hover {
+    color:#E6234F;
+    padding:16px; 
+    border-radius:20px;
+    border-color: #E6234F;
+}

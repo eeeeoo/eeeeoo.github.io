@@ -6,7 +6,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^(.*)$ $1.html [NC, L]
 
-RewriteBase /
-RewriteRule ^index\.html?$ / [NC,R,L]
+RewriteBase/
+RewriteRule ^index\.html$/[NC,R,L]
 
 

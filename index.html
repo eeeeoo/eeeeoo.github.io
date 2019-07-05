@@ -1,105 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Jee Lee">
+    <meta name="author" content="Jee Yoon Lee">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" alt="favicon">
     <title>Jee Yoon Lee</title>
-    
 <!-- style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto:900" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
-    <link href="stylesheets/project.css" rel="stylesheet">
-    <link href="assets/ionicons/css/ionicons.css" rel="stylesheet">
-            
+    <link href="assets/ionicons/css/ionicons.css" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>       
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143237373-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-143237373-2');
+    </script>
+
+    <!-- jquery Hover Effect -->
+    <script>
+      $(document).ready(function(){
+        $(".hover-effect").hover(function(){
+          $("img").attr('src', $(this).attr("data-overlay"));
+          $(".overlay").addClass("overlay-visible");
+          $(".overlay").css({"top":$(this).attr("data-offset")});
+        }, function(){
+          $(".overlay").removeClass("overlay-visible");
+        });
+      });
+    </script>
   </head>
   <body>  
-      <!-- nav bar -->
-    <div class="container">
-
-<nav class="navbar navbar-toggleable-md navbar-light">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-<!--  <a class="navbar-brand" href="#"><img src="assets/favicon.png"/></a>-->
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="about.html">About</a>
-      <a class="nav-item nav-link active" href="#">Design Projects<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="https://eeeeoo.viewbook.com/" target="_blank">Artwork Portfolio</a>
-      <a class="nav-item nav-link" href="https://eeeeoo.viewbook.com/writings" target="_blank">Writings</a>  
-    </div>
-  </div>
-</nav>
-    </div>
-
-        <div id="about" class="jumbotron">      
-<div class="container">
-      <div class="row">
-        <div class="col-md-5 mx-auto">
-            <a href="projects/whack.html" alt="whack_project">
-            <img style="padding:60px;" src="assets/whack/desktop-home.png" alt="whack" />
-            </a>          
-            <h4>WHACK</h4>
-          <p class="lead">UX Design, Graphic Design, Branding</p>
-            <a href="projects/whack.html"><p class="tiny-title">View Project<i class="ion-forward"></i></p></a>
-            
-        </div>
-        
-        <div class="col-md-5 mx-auto">
-            <a href="projects/ksa.html" alt="ksa_project">
-                <img src="assets/ksa/culture_show_card.jpeg" alt="culture show" /></a>
-          <h4>KSA Culture Show</h4>
-          <p class="lead">Branding, Graphic Design</p>
-            <a href="projects/ksa.html"><p class="tiny-title">View Project<i class="ion-forward"></i></p></a>
-       </div>
+<!-- nav bar -->
+    <div class="component">
+      <div class="flex-container">
+        <div style="flex-grow:5"><a class="brand active" href="index.html">Jee Yoon Lee</a></div>
+        <div style="flex-grow:1"><a class="sub-links" href="about.html">About</a></div>
+        <div style="flex-grow:1"><a class="sub-links" href="https://eeeeoo.viewbook.com/" target="_blank">Studio</a></div>
+        <div style="flex-grow:3"></div>
       </div>
-          <div class="row">               
+    </div>
 
-        <div class="col-md-5 mx-auto">
-             <a href="projects/wcaa.html" alt="wcaa_project">
-            <img src="assets/wcaa/save_date.jpg" style="padding:20px;" alt="wcaa_card" /></a>      
-            <h4>Wellesley College Alumnae Association</h4>
-          <p class="lead">Communication Design, Digital Marketing</p>
-            <a href="projects/wcaa.html"><p class="tiny-title">View Project<i class="ion-forward"></i></p></a>
-            
+    <div class="project-titles">
+      <div class="overlay">
+        <img src="" />
+        <p></p>
+      </div>
+      <span class="work-type">Design</span>
+      <br>
+      <a class="hover-effect" href="projects/isomatic.html" data-overlay="assets/overlay/1overlay.gif" data-offset="auto">iSomatic</a>
+      <br>
+      <!-- <a class="hover-effect" data-overlay="assets/overlay/3overlay.png" data-offset="auto">WCAA</a>
+      <br> -->
+      <a class="hover-effect" href="projects/powers-of-ten.html" data-overlay="assets/overlay/2overlay.png" data-offset="-5px">Powers of Ten</a>
+      <br>
+      <a class="hover-effect" href="projects/whack.html" data-overlay="assets/overlay/3overlay.png" data-offset="auto">WHACK</a>
+      <!-- <br> -->
+      <!-- <a class="hover-effect" href="projects/whereami.html" data-overlay="assets/overlay/6overlay.jpeg" data-offset="auto">Where Am I?</a> -->
+      <br><br>
+      <span class="work-type">Develop</span>
+      <br>
+      <a class="hover-effect" href="https://github.com/eeeeoo/ram-frontend" data-overlay="assets/overlay/7overlay.png" data-offset="auto">Rams</a>
+      <br>
+      <a class="hover-effect" href="https://github.com/eeeeoo/Synergy-Post" data-overlay="assets/overlay/8overlay.png" data-offset="auto">Synergy Post</a>
     </div>
-        <div class="col-md-5 mx-auto">
-            <a href="projects/whereami.html" alt="whereami_project">
-            <img src="assets/whereami/wai_card.jpeg" alt="whereami_card" />
-                    </a>          
-            <h4>Where am I?</h4>
-          <p class="lead">Service Design, Ethnographic Research</p>
-          <a href="projects/whereami.html"><p class="tiny-title">View Project<i class="ion-forward"></i></p></a>
-    </div>
-    </div>
-            </div>
-    <br class="large">
-    <br class="large">
-            
-     <footer>
-      <div class="container">
-        <div class="col-lg-12 text-center">
-          <br>
-          <a href="mailto:jlee66@wellesley.edu" class="sign ion-email"></a><p class="small-text">© 2018 Jee Lee</p>
+    <br>
+    <!-- footer -->
+    <footer>
+      <div class="about-row">
+        <div class="column-half">
+          <span class="small-text">Jee Yoon Lee © 2019</span>
+        </div>
+        <div class="column-half">
+          <a class="brand" target="_blank" href="https://www.linkedin.com/in/eeeeoo">LinkedIn</a>, 
+          <a class="brand" target="_blank" href="https://medium.com/@eeeeoo">Medium</a>, 
+          <a class="brand" target="_blank" href="https://www.are.na/jee-lee">Are.na</a>
         </div>
       </div>
     </footer>
-    <!-- scripts -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>       
-    <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109907049-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-109907049-1');
-        </script>
-    </body>
+  </body>
 </html>

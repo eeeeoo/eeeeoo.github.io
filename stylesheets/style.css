@@ -36,6 +36,9 @@ img, video {
   width: 100%;
 }
 
+.title{
+  padding-bottom:15px;
+}
 /* project links */
 .hover-effect, .hover-effect:visited{
   -webkit-text-stroke-width: 1px;
@@ -69,7 +72,7 @@ img, video {
     display :inline-block;
     z-index :-1;
     opacity :0;
-    background-color:rgba(0,0,0,0.02);
+    /* background-color:rgba(0,0,0,0.02); */
     transform :scale(1,0.1);
     -webkit-transform :scale(1,0.1);
     transition :150ms ease;

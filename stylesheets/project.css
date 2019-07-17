@@ -83,6 +83,23 @@
   background-image: url("../assets/overlay/4overlay3.png");
 }
 
+.parallax-where::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  width:100%;
+  z-index: -1;
+  opacity: 0.2;
+  background-image: url("../assets/overlay/9overlay.jpg");
+}
+
 .content {
   /* height: 200vh;
   display: flex;

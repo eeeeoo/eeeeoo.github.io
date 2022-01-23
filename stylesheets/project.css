@@ -51,6 +51,21 @@
   background-image: url("../assets/overlay/1overlay.gif");
 }
 
+.parallax-mov::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width:80%;
+  z-index: -1;
+  background-image: url("../assets/overlay/10overlay2.gif");
+}
 .parallax-whack::after {
   content: "";
   position: absolute;

@@ -66,6 +66,23 @@
   z-index: -1;
   background-image: url("../assets/overlay/10overlay2.gif");
 }
+
+.parallax-oppo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* transform: translateZ(-1px) scale(2); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  z-index: -1;
+  background-image: url("../assets/overlay/11overlay2.png");
+}
+
 .parallax-whack::after {
   content: "";
   position: absolute;
@@ -131,6 +148,7 @@
 h2, h3 {
   color:#423F40;
   padding-bottom:20px;
+  font-size:28px;
   /* font-weight: bold; */
 }
 

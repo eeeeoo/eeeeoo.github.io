@@ -1,5 +1,11 @@
+@font-face{
+  font-family: 'Aktiv Grotesk Regular';
+  src: url('../fonts/Aktiv\ Grotesk-Regular.ttf') format('truetype'), 
+       url('../fonts/Aktiv\ Grotesk-Regular.otf') format('opentype');
+}
+
 body {
-  font-family: 'Roboto', Helvetica,  Arial, sans-serif;
+  font-family: 'Aktiv Grotesk Regular';
   letter-spacing: 0.5px;
   line-height: 1.33;
   color: #423F40;
@@ -26,6 +32,7 @@ body {
   color: #423F40;
   /* text-decoration:none; */
 }
+
 
 .active, .sub-links:hover, .brand:hover{
   color: #FF4407;
